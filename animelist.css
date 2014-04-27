@@ -1,0 +1,448 @@
+/***********************************************
+ *  http://meyerweb.com/eric/tools/css/reset/
+ *  v2.0 | 20110126
+ *  License: none (public domain)
+ ***********************************************/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/***********************************************
+ *  http://myanimelist.net/profile/thextor
+ *  v1.0
+ *  MAL Stylesheet
+ ***********************************************/
+
+body {
+    font-size:          16px;
+    line-height:        1.428571429;
+    color:              #333;
+    background:         #fff url(https://raw.github.com/thextor/myanimelist-styles/master/animelist.jpg) no-repeat fixed bottom right;
+    background-size:    100% auto;
+    overflow-y:         scroll;
+}
+
+body *{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif !important;
+}
+
+/**
+ * Navigation / Header
+ * Yes, this looks like bootstrap ;)
+ * 20% margin left and right
+ */
+
+#mal_control_strip{
+    background:     #222    !important;
+    border-color:   #080808 !important;
+    position:       fixed !important;
+    top:            0 !important;
+    left:           0 !important;
+    z-index:        9001 !important; /* It's over NINE THOUSAAAAAAAND! */
+    height:         50px;
+}
+
+#mal_control_strip td{
+    border:     none;
+    height:     50px !important;
+}
+
+#mal_cs_otherlinks, #mal_cs_listinfo{
+    display: none;
+}
+
+#mal_cs_pic a{
+    display: none;
+}
+
+#mal_cs_links{
+    width:          56% !important;
+    padding:        0% 22% !important;
+    vertical-align: middle;
+}
+
+#mal_cs_links strong{
+    display: none;
+}
+
+#mal_cs_links > div{
+    margin:     0px !important;
+    padding:    0px;
+    font-size:  0px !important;
+    float:      left;
+}
+
+#mal_cs_links div:first-child a:first-child{
+    display: none;
+}
+
+#mal_cs_links:before, #mal_cs_pic:before{
+    content:        "thextor's animelist";
+    float:          left;
+    font-size:      20px;
+    line-height:    20px;
+    color:          #ddd;
+    padding:        15px 20px 0% 0%;
+}
+
+#mal_cs_pic:before{
+    margin-left: 22%;
+}
+
+#mal_cs_links a{
+    display:            block;
+    color:              #ddd !important;
+    line-height:        20px;
+    outline:            0;
+    float:              left;
+    padding:            0px 15px;
+    font-size:          inherit !important;
+    text-decoration:    none !important;
+    font-size:          16px !important;
+    text-transform:     lowercase !important;
+    height:             35px;
+    padding-top:        15px;
+}
+
+#mal_cs_links div:nth-child(2) a:nth-child(1){
+    background-color: #000 !important;
+    color: #fff !important;
+
+}
+
+#mal_cs_links a:hover{
+    color: #fff !important;
+}
+
+#mal_cs_powered{
+    display: none;
+}
+
+/**
+ * List
+ * 22% margin left and right
+ */
+
+#list_surround{
+    padding-top: 115px;
+}
+
+#list_surround > *{
+    width:          56% !important;
+    margin:         0% 22% !important;
+    text-transform: lowercase !important;
+}
+
+#list_surround a{
+    text-decoration:    none;
+    font-size:          16px;
+    line-height:        1.428571429;
+    color:              #333;
+}
+
+#list_surround > :nth-child(5){
+    margin-top: 4px !important;
+}
+
+#list_surround small{
+    display: none;
+}
+
+#list_surround .header_title{
+    font-size:      25px;
+    font-weight:    normal;
+    line-height:    1.1;
+    margin-bottom:  15px;
+}
+
+/* First column */
+#list_surround > table:not(:nth-child(2)) td:nth-child(1){
+    text-align: left;
+    width: 5%;
+}
+
+/* second column */
+#list_surround > table:not(:nth-child(2)) td:nth-child(2){
+    text-align: left;
+    width: 69%;
+}
+
+/* third column */
+#list_surround > table:not(:nth-child(2)) td:nth-child(3){
+    text-align: right;
+    width: 8%;
+}
+
+/* fourth column */
+#list_surround > table:not(:nth-child(2)) td:nth-child(4){
+    text-align: right;
+    width: 8%;
+}
+
+/* fifth column */
+#list_surround > table:not(:nth-child(2)) td:nth-child(5){
+    text-align: right;
+    width: 10%;
+}
+
+.table_header{
+    background-color: #222;
+    padding: 10px;
+}
+
+.table_headerLink{
+    color: #ddd !important;
+}
+
+.td1, .td2{
+    padding: 4px 10px;
+}
+
+.td1{
+    background-color: #fff;
+}
+
+.td2{
+    background-color: #eee;
+}
+
+.category_totals{
+    margin-bottom: 35px !important;
+    display: block;
+    background-color: red!important;
+    font-size: 0px !important;
+}
+
+#grand_totals{
+    display: none;
+}
+
+
+/**
+ * Navigation
+ * Left to the list, 5% margin on each side
+ */
+
+#list_surround > table:nth-child(2){
+    position:       fixed !important;
+    left:           8% !important;
+    top:            119px !important;
+    z-index:        9001 !important; /* It's over NINE THOUSAAAAAAAND! */
+    width:          10% !important;
+    margin:         0px !important;
+}
+
+#list_surround > :nth-child(2) td{
+    width: 100% !important;
+    display: block;
+    text-align: left;
+}
+
+#list_surround > :nth-child(2) a{
+    display:            block;
+    margin-bottom:      5px;
+}
+
+#list_surround > :nth-child(2) td:first-child:before{
+    content:        "available lists";
+    display:        block;
+    width:          100%;
+    font-size:      25px;
+    font-weight:    normal;
+    line-height:    1.1;
+    margin-bottom:  15px;
+}
+
+#list_surround > :nth-child(2) td.status_selected a{
+    font-weight: bold;
+}
+
+#list_surround > br{
+    display: none;
+}
+
+/**
+ * Copyright
+ */
+
+#copyright{
+    font-size:      14px !important;
+    width:          30% !important;
+    margin:         0% auto !important;
+    margin-bottom:  20px !important;
+}
+
+#copyright a{
+    font-size: 14px !important;
+}
+
+/**
+ * Responsive styles
+ */
+
+/* hide type column */
+@media (max-width: 1600px){
+    /* second column */
+    #list_surround > table:not(:nth-child(2)) td:nth-child(2){
+        width: 71%;
+    }
+
+    /* third column */
+    #list_surround > table:not(:nth-child(2)) td:nth-child(3){
+        width: 11%;
+    }
+
+    /* fourth column */
+    #list_surround > table:not(:nth-child(2)) td:nth-child(4){
+        display: none;
+    }
+
+    /* fifth column */
+    #list_surround > table:not(:nth-child(2)) td:nth-child(5){
+        width: 13%;
+    }
+}
+
+/* change available lists margin */
+@media (max-width: 1200px){
+    #list_surround > table:nth-child(2){
+        left: 2.5% !important;
+    }
+}
+
+/* remove progress column */
+@media (max-width: 1000px){
+    /* first column */
+    #list_surround > table:not(:nth-child(2)) td:nth-child(1){
+        width: 7%;
+    }
+
+    /* second column */
+    #list_surround > table:not(:nth-child(2)) td:nth-child(2){
+        width: 81%;
+    }
+
+    /* third column */
+    #list_surround > table:not(:nth-child(2)) td:nth-child(3){
+        width: 12%;
+    }
+
+    /* fifth column */
+    #list_surround > table:not(:nth-child(2)) td:nth-child(5){
+        display: none;
+    }
+}
+
+/* remove background and right margin */
+@media (max-width: 850px){
+    body{
+        background: #fff;
+    }
+
+    #mal_cs_links{
+        width:      75% !important;
+        padding:    0% 0% 0% 25% !important;
+    }
+
+    #list_surround > *{
+        width:      75% !important;
+        margin:     0% 0% 0% 25% !important;
+    }
+
+    #list_surround > table:nth-child(2){
+        left: 1% !important;
+    }
+
+    #mal_cs_pic:before{
+        margin-left: 25%;
+    }
+}
+
+/* single column, no margins / paddings */
+@media (max-width: 700px){
+    #mal_cs_links{
+        width:      100% !important;
+        padding:    0% !important;
+    }
+
+    #list_surround > table{
+        width:      100% !important;
+        margin:     0% !important;
+    }
+
+    #copyright{
+        margin: 0px auto !important;
+    }
+
+    #mal_cs_links > div{
+        display: none;
+    }
+
+    #mal_cs_links:before, #mal_cs_pic:before{
+        width:      100%;
+        text-align: center;
+    }
+
+    #list_surround > table:nth-child(2){
+        margin-top: 55px !important;
+        position:   static !important;
+        width:      100% !important;
+    }
+
+    #list_surround > table:nth-child(2) *{
+        text-align: center !important;
+    }
+
+    #list_surround > table:not(:nth-child(2)) :first-child{
+        margin-top: 20px !important;
+    }
+
+    .header_title{
+        text-align: center;
+    }
+
+    #list_surround{
+        padding-top: 25px;
+    }
+}
