@@ -58,7 +58,7 @@ body {
     font-size:          16px;
     line-height:        1.428571429;
     color:              #333;
-    background:         #fff url(http://myanimelist.thextor.de/animelist.jpg) no-repeat fixed bottom right;
+    background:         #fff url(http://myanimelist.thextor.de/mangalist.jpg) no-repeat fixed bottom right;
     background-size:    100% auto;
     overflow-y:         scroll;
 }
@@ -145,7 +145,7 @@ body *{
     padding-top:        15px;
 }
 
-#mal_cs_links div:nth-child(2) a:nth-child(1){
+#mal_cs_links div:nth-child(2) a:nth-child(2){
     background-color: #000 !important;
     color: #fff !important;
 
