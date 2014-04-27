@@ -270,21 +270,22 @@ body *{
     top:            119px !important;
     z-index:        9001 !important; /* It's over NINE THOUSAAAAAAAND! */
     width:          10% !important;
-    margin:         0px !important;
+    margin:         0px 0px 20px 0px !important;
 }
 
-#list_surround > :nth-child(2) td{
-    width: 100% !important;
-    display: block;
+#list_surround > table:nth-child(2) td{
+    width:      100% !important;
+    display:    block;
     text-align: left;
+    float:      left;
 }
 
-#list_surround > :nth-child(2) a{
+#list_surround > table:nth-child(2) a{
     display:            block;
     margin-bottom:      5px;
 }
 
-#list_surround > :nth-child(2) td:first-child:before{
+#list_surround > table:nth-child(2) td:first-child:before{
     content:        "available lists";
     display:        block;
     width:          100%;
@@ -294,7 +295,7 @@ body *{
     margin-bottom:  15px;
 }
 
-#list_surround > :nth-child(2) td.status_selected a{
+#list_surround > table:nth-child(2) td.status_selected a{
     font-weight: bold;
 }
 
