@@ -50,7 +50,7 @@ table {
 
 /***********************************************
  *  http://myanimelist.net/profile/thextor
- *  v1.0
+ *  v1.1
  *  MAL Stylesheet
  ***********************************************/
 
@@ -58,7 +58,7 @@ body {
     font-size:          16px;
     line-height:        1.428571429;
     color:              #333;
-    background:         #fff url(http://myanimelist.thextor.de/mangalist.jpg) no-repeat fixed bottom right;
+    background:         #fff url(https://cdn.rawgit.com/thextor/myanimelist-styles/1.1/mangalist.jpg) no-repeat fixed bottom right;
     background-size:    100% auto;
     overflow-y:         scroll;
 }
